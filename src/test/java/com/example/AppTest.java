@@ -9,12 +9,15 @@ import org.junit.Test;
  */
 public class AppTest 
 {
+    private String[] args;
+
     /**
      * Rigorous Test :-)
      */
     @Test
     public void shouldAnswerWithTrue()
     {
+        App.main(args);
         assertTrue( true );
     }
 }

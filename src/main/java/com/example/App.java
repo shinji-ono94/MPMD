@@ -2,6 +2,7 @@ package com.example;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class App{
 
@@ -18,12 +19,14 @@ public class App{
             @Override
             public void run() {
                 query1List.stream().forEach(x -> {res1.add(x + "a");});
+                System.out.println(query1List);
             }
         });
         Thread t2 = new Thread(new Runnable(){
             @Override
             public void run() {
                 query2List.stream().forEach(x ->{res2.add(x + "b");});
+                System.out.println(query2List);
             }
         });
         t1.start();
